@@ -14,10 +14,10 @@ Resources:
     Properties:
       MemorySize: 128
       Architectures: ["arm64"]
-      Handler: bootstrap
+      Handler: lambda_rust_deploy
       Runtime: provided.al2
       Timeout: 5
-      CodeUri: target/release/rust_lambda_deploy/
+      CodeUri: target/release/
       Events:
         RustAdminControlRoot:
           Type: Api

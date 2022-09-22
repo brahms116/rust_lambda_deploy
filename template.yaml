@@ -23,7 +23,7 @@ Resources:
           Type: Api
           Properties:
             RestApiId:
-              Ref: RustControlApi
+              Ref: FunctionApi
             Path: "/"
             Method: POST
 

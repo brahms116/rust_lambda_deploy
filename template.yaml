@@ -11,13 +11,13 @@ Globals:
 Resources:
   Function:
     Type: AWS::Serverless::Function
+    Metadata:
+      BuildMethod: makefile
     Properties:
       MemorySize: 128
       Architectures: ["arm64"]
-      Handler: lambda_rust_deploy
       Runtime: provided.al2
       Timeout: 5
-      CodeUri: target/release/
       Events:
         RustAdminControlRoot:
           Type: Api

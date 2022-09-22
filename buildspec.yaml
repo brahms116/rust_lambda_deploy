@@ -3,5 +3,5 @@ phases:
   build:
     commands:
       - cargo build --release
-      - sam build
+      - sam build Function
       - sam deploy --no-confirm-changeset --no-fail-on-empty-changeset --resolve-s3

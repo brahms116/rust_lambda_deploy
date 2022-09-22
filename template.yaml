@@ -17,7 +17,7 @@ Resources:
       MemorySize: 128
       Architectures: ["arm64"]
       Runtime: provided.al2
-      Handler: rust_lambda_deploy
+      Handler: bootstrap
       Timeout: 5
       Events:
         RustAdminControlRoot:
